@@ -3,7 +3,7 @@
   --colorTextAccent: #fbd874;
   --colorBackground: #0b1d26;
 }
-/*  */
+/* Global */
 body {
   font-family: "Chivo", sans-serif;
   font-size: 18px;
@@ -11,7 +11,30 @@ body {
   color: var(--colorTextPrimary);
   background-color: var(--colorBackground);
 }
+.container {
+  max-width: 1507px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* Header */
+.header {
+  padding-top: 65px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 91.67%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .logo {
   font-family: "Chonburi", serif;
   font-family: var(--second-family);
@@ -25,6 +48,13 @@ body {
   font-weight: 900;
 }
 /* Main */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 745px;
+}
+.hero-container {
+  max-width: 980px;
+}
 .hero-subtitle {
   letter-spacing: 0.33em;
 }
@@ -34,6 +64,30 @@ body {
   font-size: 88px;
   line-height: 114%;
   text-transform: capitalize;
+  margin-bottom: 32px;
+}
+.travel {
+  padding-bottom: 200px;
+}
+.travel-item {
+  padding-bottom: 200px;
+}
+.travel-item:last-child {
+  margin-bottom: 0px;
+}
+.travel-step {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+}
+.travel-item:nth-child(even) .step-photo {
+  order: -1;
+}
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 150px;
 }
 .step-text {
   font-weight: 900;
@@ -54,9 +108,25 @@ body {
   color: var(--colorTextAccent);
   font-weight: 900;
 }
+.footer {
+  padding-bottom: 120px;
+}
+.footer-container {
+  display: flex;
+  gap: 200px;
+}
+.footer-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .footer-info-text {
   font-weight: 900;
   line-height: 1.77778;
+  flex-grow: 1;
+  max-width: 303px;
 }
 .footer-info-copyrith {
   line-height: 1.77778;
@@ -68,6 +138,13 @@ body {
   font-size: 24px;
   line-height: 1.3333;
   color: var(--colorTextAccent);
+  margin-bottom: 25px;
+}
+.blog-list,
+.mntn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .blog-link,
 .mntn-link {
